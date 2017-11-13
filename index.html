@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>山寨百度新闻搜索——全球最大的山寨中文新闻平台</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" href="images/baidu-icon.ico">
+</head>
+<body>
+<div class="header clearfix">
+    <ul class="usrbar">
+        <li><a href="#" id="app_tool">百度新闻客户端</a>
+            <div id='header-app'></div>
+        </li>
+        <li><a href="#">注册</a></li>
+        <li><a href="#" class='loginclick'>登录</a></li>
+        <li><a href="https://www.baidu.com/">百度首页</a></li>
+    </ul>
+    <div class='header-divider'></div>
+    <ul class="header-link">
+        <li><a href="">文库</a></li>
+        <li><a href="">地图</a></li>
+        <li><a href="">视频</a></li>
+        <li><a href="">图片</a></li>
+        <li><a href="">音乐</a></li>
+        <li><a href="">知道</a></li>
+        <li><a href="">贴吧</a></li>
+        <li>新闻</li>
+        <li><a href="">网页</a></li>
+    </ul>
+</div>
+<div class="headerwrapper clearfix">
+    <div class="search">
+        <div id="logo"><img src="images/logo_news_276_88_1f9876a.png" alt="logo" width="137px" height="46px"></div>
+        <div id="search">
+            <input type="text" id='searchText'><input type="button" id='searchBtu' value="百度一下">
+            <a href="#">帮助</a>
+            <a href="#">高级搜索</a>
+            <a href="#">设置</a>
+            <div class='searchSelect'>
+                <input type="radio" checked name="tn" id="news">
+                <label for='news'>新闻全文</label>
+                <input type="radio" name="tn" id="newsTitle">
+                <label for=newsTitle> 新闻标题</label>
+            </div>
+
+        </div>
+    </div>
+    <div id="nav">
+        <div id="navContent">
+            <ul>
+                <div id="move" style="width: 70px;height: 40px; top: 0;left: 0;"></div>
+                <li class='home'><a href="#"><i class='iconfont'>&#xe62e;</i>首页</a></li>
+                <li><a href="#">百家号</a></li>
+                <li><a href="#">国内</a></li>
+                <li><a href="#">国际</a></li>
+                <li><a href="#">军事</a></li>
+                <li><a href="#">社会</a></li>
+                <li><a href="#">财经</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">体育</a></li>
+                <li><a href="#">互联网</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">时尚</a></li>
+                <li><a href="#">女人</a></li>
+                <li><a href="#">汽车</a></li>
+                <li><a href="#">房产</a></li>
+                <li><a href="#">个性推荐</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="w">
+    <div class="column clearfix">
+        <div class="column-left fl">
+            <div id="headline-tabs">
+                <ul>
+                    <li class='default'><a href="#" style='border-right: 1px solid #e5e5e5'>热点要闻</a></li>
+                    <li><a href="#">个性推荐</a></li>
+                </ul>
+                <a href="#" class='fr login loginclick'></a>
+            </div>
+            <div class="content">
+                <div id="pane-news">
+                    <div class="hotNews">
+                        <ul>
+                            <li><i class='dot'></i><a href="#"><strong>速览《大国外交》之《大道之行》</strong></a></li>
+                            <li><i class='dot'></i><a href="#">河北塞罕坝林场</a><a href="#">军舰撤侨</a><a href="#">金砖五国</a><a
+                                    href="#">砥砺奋进</a></li>
+                            <li><i class='dot'></i><a href="#">国防部揭秘：印军越界后，中国军队做了这些事</a></li>
+                            <li><i class='dot'></i><a href="#">山西佛光寺大殿多处漏雨 被称“古建筑第一瑰宝”</a></li>
+                            <li><i class='dot'></i><a href="#">两部门：在北京等13个城市试点集体租赁住房</a></li>
+                            <li><i class='dot'></i><a href="#">日本说朝鲜发射一枚导弹从日本上空飞过</a></li>
+                        </ul>
+                    </div>
+                    <ul class="newsList">
+                        <li class='title'><i class="dot"></i><a href="#">20省份公布医保目录调整方案 36品种纳入报销范围</a></li>
+                        <li><a href="#">媒体称苹果9月12日召开新品发布会 将发布3款iphone</a></li>
+                        <li><a href="#">央视：印度，应从“洞朗事件”学到什么？</a></li>
+                        <li><a href="#">令计划受贿收欧元 揭秘"大老虎"们敛财为何偏爱外币？</a></li>
+                        <li><a href="#">贵州纳雍山体滑坡目击者：泥石如瀑布倾泻</a></li>
+                        <li><a href="#">这位官员被查 曾带队援建汶川获全国五一劳动奖状</a></li>
+                    </ul>
+                    <ul class="newsList">
+                        <li class='title'><i class="dot"></i><a href="#">ICO到底是不是庞氏骗局？</a></li>
+                        <li><a href="#">一男子于美国新墨西哥州图书馆开枪射击 至少6人死伤</a></li>
+                        <li><a href="#">北京市委书记蔡奇不到两月三次赴此地 所为何事？</a></li>
+                        <li><a href="#">美媒爆特朗普对华贸易政策不满意 要求提高关税</a></li>
+                        <li><a href="#">人大常委会委员：建议私人场合歪唱国歌也应追责</a></li>
+                        <li><a href="#">日媒披露危秋洁信件详文:活了27年 努力不下去了</a></li>
+                    </ul>
+                    <ul class="newsList">
+                        <li class='title'><i class="dot"></i><a href="#">上海闵行限制涉性犯罪者从业 涉及教育等行业</a></li>
+                        <li><a href="#">特朗普要求墨西哥支付边境墙费用 墨政府：绝不付！</a></li>
+                        <li><a href="#">扎克伯格宣布二女儿出生 将休两个月陪产假</a></li>
+                        <li><a href="#">维密模特面试现场什么样？不看身材却看重这个</a></li>
+                        <li><a href="#">泰国副总理:若证实英拉确实出逃 刑罚将会加重</a></li>
+                        <li><a href="#">长春醉酒男携女开房不成，怒砸酒店暴打女店长</a></li>
+                    </ul>
+                    <ul class="newsList">
+                        <li class='title'><i class="dot"></i><a href="#">德国一护士至少谋杀90名患者 被判处终身监禁</a></li>
+                        <li><a href="#">章莹颖案正式审理时间被推迟 定于2018年2月</a></li>
+                        <li><a href="#">未成年人陷"套路贷":想借3000元结果损失1套房</a></li>
+                        <li><a href="#">日媒传“中国人东京街头强奸妇女” 警方:尚未证实</a></li>
+                        <li><a href="#">美军舰撞船赖中国 外媒：明明是美舰横穿航运线导致</a></li>
+                        <li><a href="#">传销公司CEO高墙内欲对警察“洗脑”：给你们讲讲VR</a></li>
+                    </ul>
+                    <ul class="newsList">
+                        <li class='title'><i class="dot"></i><a href="#">南京相亲女：长江以北是农村 用婚姻改变命运</a></li>
+                        <li><a href="#">“五行币”掌门人曾包一条街 供会员免费吃喝玩乐</a></li>
+                        <li><a href="#">七夕前儿子疑似为给母亲出头 当街暴打父亲小三</a></li>
+                        <li><a href="#">男子尾随独身女袭胸猥亵 抢走手机第二天托人送回</a></li>
+                        <li><a href="#">华裔小伙遭大汉围殴刺死 只因人群中多看了一眼</a></li>
+                        <li><a href="#">游客浙江安吉漂流被工作人员掌掴 涉事景区已停业</a></li>
+                    </ul>
+                </div>
+                <div id="pane-recommend"></div>
+            </div>
+        </div>
+        <div class="column-right fr">
+            <div class="imgPlayer clearfix">
+                <div id="imgView">
+                    <a href="#">
+                        <img src="images/4afbfbedab64034f9f4af3cca5c379310b551d70.jpg" height=305 width=560>
+                    </a>
+                </div>
+                <div class="imgPlayer-control">
+                    <div id="controlLeft"><i class='iconfont'>&#xe676;</i></div>
+                    <div id="controlRight"><i class='iconfont'>&#xe679;</i></div>
+                </div>
+                <div class="imgTitle clearfix">
+                    <div class="title fl"><a href="#">西班牙上演精彩斗牛赛 帅气斗牛手被顶个“倒栽葱”</a></div>
+                    <div class="fr">
+                        <span class="changeydot"></span><span class="ydot"></span><span class="ydot"></span><span
+                            class="ydot"></span><span class="ydot"></span><span class="ydot"></span><span
+                            class="ydot"></span><span class="ydot"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="newsHotword">
+                <div class="hotwordsTitle">
+                    <a href='#' class='blueTitle'>热搜新闻词</a>
+                    <span class='en'>HOT WORDS</span>
+                </div>
+                <div class="hotwordsContent clearfix">
+                    <ul>
+                        <li class='bigBox'><a href="#">习近平对塞罕坝建设者事迹作出重要指示</a></li>
+                        <li class='bigBox'><a href="#">习近平出席第十三届全运会开幕式</a></li>
+                        <li><a href="#">20省份公布医保目录调整方案</a></li>
+                        <li><a href="#">北京新小区停车位需安装充电桩</a></li>
+                        <li><a href="#">麦当劳回应抗生素鸡含糊其辞</a></li>
+                        <li><a href="#">高校明年不再学历继续教育</a></li>
+                        <li><a href="#">快递员违法5年内不得再从业</a></li>
+                        <li><a href="#">海警船在钓鱼岛毗邻海域巡航</a></li>
+                        <li><a href="#">西藏计划开30个边防公路</a></li>
+                        <li><a href="#">黑龙江漠河七夕飘雪</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="baijia">
+                <div class="baijiaTitle">
+                    <div class="title-l">
+                        <a href="#" class="blueTitle">百家号</a>
+                        <span class="en">BAIJIA</span>
+                    </div>
+                    <div class="title-r">
+                        <a href="#">财经</a>
+                        <span class='baijia-divider'></span>
+                        <a href="#">文化</a>
+                        <span class='baijia-divider'></span>
+                        <a href="#">娱乐</a>
+                        <span class='baijia-divider'></span>
+                        <a href="#">体育</a>
+                    </div>
+                    <span class='fr' style='background: url("images/icon-more_62ae436.png") no-repeat right 3px;'><a
+                            href="#"
+                            style='color: #ff4200;font-weight: 700;font-size: 12px;margin-right: 16px'>加入百家号</a></span>
+                </div>
+                <div class="baijiaContent clearfix">
+                    <div class="imagearea fl">
+                        <div class="imgTop">
+                            <a href="#" class="imgBig"></a>
+                            <a href="#" class='imgBigtit' title='扒完社交网络才明白，《权力的游戏》凭什么是神作'>扒完社交网络才明白，《权力的游戏》凭什么是神作</a>
+                        </div>
+                        <div class="imgBd fl">
+                            <a href="#" class='imgBl'></a>
+                            <a href="#" class='imgTit'>12年一轮回，分类信息的价值回归</a>
+                        </div>
+                        <div class="imgBd fr">
+                            <a href="#" class='imgBr'></a>
+                            <a href="#" class='imgTit'>直播行业正在出现一台效率最高的造星机器</a>
+                        </div>
+                    </div>
+                    <div class="baijiaList fr">
+                        <ul>
+                            <li class='boleTitle'><a href="#">华为的秋天：境遇增长瓶颈 董事会换届在即 谁将接管华为？</a></li>
+                            <li><a href="#">这个冬天，将是共享单车最艰难的时刻</a></li>
+                            <li><a href="#">挖知乎大 V 跟挖喊麦游戏网红主播，完全是两码事</a></li>
+                            <li><a href="#">联发科连发两款芯片依然难改被高通压制的局面</a></li>
+                            <li><a href="#">知乎上线“想法”，短内容场景是否与知乎相矛盾</a></li>
+                        </ul>
+                        <ul>
+                            <li class='boleTitle'><a href="#">直播行业正在出现一台效率最高的造星机器</a></li>
+                            <li><a href="#">什么是千兆级LTE？带你了解5G网络之前最重要的通信创新</a></li>
+                            <li><a href="#">扒完社交网络关系才明白，《权力的游戏》凭什么是神作</a></li>
+                            <li><a href="#">谁说AR没有未来？它的未来就在汽车上</a></li>
+                            <li><a href="#">数据、传感器、打车服务，哪个才是未来无人车制胜关键？</a></li>
+                        </ul>
+                    </div>
+                    <div class="baijiaFocus fl">
+                        <div class='baijiaFtit'>
+                            <span class='blueTitle'>百家聚焦</span>
+                            <span class='en'>BAIJIA FOCUS</span>
+                        </div>
+                        <div class="baijiaFimg">
+                            <a href="#" class='imgBig'></a>
+                            <a href="#" class='imgBigtit' title='被贾跃亭抽血62亿，乐视网现金枯竭生死一线'>被贾跃亭抽血62亿，乐视网现金枯竭生死一线</a>
+                        </div>
+                    </div>
+                    <div class="baijiaHot fr">
+                        <div class="baijiaHtit">
+                            <span class='blueTitle'>热门文章</span>
+                            <span class='en'>BAIJIA HOT</span>
+                            <div class="tab fr">
+                                <span class="tabR default">日榜</span><span class="tabZ" style='right: -110px'>周榜</span>
+                            </div>
+                        </div>
+                        <div class="baijiaHlist">
+                            <ul>
+                                <li><span class='listNum num1'></span><a href="#">土豪金的共享单车也倒闭了！网</a><a href="#"
+                                                                                                       class="fr">唆麻</a>
+                                </li>
+                                <li><span class='listNum num2'></span><a href="#">2017年底共享单车将迎来跑</a><a href="#"
+                                                                                                       class="fr">磐石之心</a>
+                                </li>
+                                <li><span class='listNum num3'></span><a href="#">被贾跃亭抽血62亿，乐视网现</a><a href="#"
+                                                                                                       class="fr">X教授</a>
+                                </li>
+                                <li><span class='listNum num4'></span><a href="#">一家公司，为《战狼2》带来2</a><a href="#"
+                                                                                                       class="fr">小郝子</a>
+                                </li>
+                                <li><span class='listNum num5'></span><a href="#">为什么今年七夕在微信朋友圈秀</a><a href="#"
+                                                                                                       class="fr">郭静</a>
+                                </li>
+                            </ul>
+                            <ul style='display: none'>
+                                <li><span class='listNum num1'></span><a href="#">支付宝将无条件注销一年未登录</a><a href="#"
+                                                                                                       class="fr">虎龙吟</a>
+                                </li>
+                                <li><span class='listNum num2'></span><a href="#">土豪金的共享单车也倒闭了！网</a><a href="#"
+                                                                                                       class="fr">唆麻</a>
+                                </li>
+                                <li><span class='listNum num3'></span><a href="#">Note8发布背后：全球锦上</a><a href="#"
+                                                                                                       class="fr">孙永杰</a>
+                                </li>
+                                <li><span class='listNum num4'></span><a href="#">iPhone8无线充电器大起</a><a href="#"
+                                                                                                       class="fr">喻拓</a>
+                                </li>
+                                <li><span class='listNum num5'></span><a href="#">阿里前CEO卫哲：我特别反对</a><a href="#"
+                                                                                                       class="fr">硅谷密探</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="localNews">
+        <div class="localNews-title">
+            <a href="#" class='blueBlodTitle'><b>北京</b>新闻</a>
+            <span class='enName'>LOCAL NEWS</span>
+            <span id="tabCity">切换城市</span>
+            <a href="#" class='more'>更多</a>
+        </div>
+        <div class="localNews-content">
+            <div class="newsHot fl">
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">北京最大图书物流中心开拆 明年6月底将全部拆除</a></li>
+                    <li><a href="#">刘宝杰：每年利用人防工程增加2万多个停车位</a></li>
+                    <li><a href="#">国际安徒生奖50周年巡展北京站反响热烈 巴西插...</a></li>
+                    <li><a href="#">拟在北京试飞无人机送货？京东回应：禁飞，无计划</a></li>
+                    <li><a href="#">配置更丰富 新款北京BJ40L谍照曝光</a></li>
+                    <li><a href="#">张韶涵将举办巡回演唱会 时隔7年后再回北京开唱</a></li>
+                    <li><a href="#">9月9日、10日丰台区园博园周边交通管制</a></li>
+                    <li><a href="#">专向国企混改子基金北京国调混改投资基金成立</a></li>
+                </ul>
+            </div>
+            <div class="newsImg fl">
+                <div class="littleTitle">新闻图片</div>
+                <a href="#" class='newsBigimg'></a>
+                <a href="#" class='newsBigimgtitle'>2018考生和家长 北京中考必知政策你了解吗？</a>
+            </div>
+            <div class="newsList fr">
+                <div class="littleTitle">新闻资讯</div>
+                <div class="ulist">
+                    <ul>
+                        <li><a href="#">北京市开展全市餐饮自查互查</a></li>
+                        <li><a href="#">《北京市知识产权运营试点示范单位认定和管理办..</a></li>
+                        <li><a href="#">网友立功了 北京地铁惊现三星Note 8</a></li>
+                        <li><a href="#">今天北京气温回升大风刮 本周前期晴天为主</a></li>
+                        <li><a href="#">北京绝不允许对扶贫救助资金“揩油”</a></li>
+                        <li><a href="#">北京：办四类公证 让市民“最多跑一次”</a></li>
+                        <li><a href="#">北京：今年“疏解整治促提升”专项行动进度达70%</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="china">
+        <div class="china-title">
+            <a href="#" class='blueBlodTitle'>国内</a>
+            <a class='enName'>CHINA</a>
+            <span class='title-list'>
+                <a href="#">时政要闻</a>
+                <span class='news-divider'></span>
+                <a href="#">台湾</a>
+                <span class='news-divider'></span>
+                <a href="#">港澳</a>
+            </span>
+            <a href="#" class="more">更多</a>
+        </div>
+        <div class="china-content">
+            <div class="china-ulist fl">
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">南京猥亵案嫌犯或遭学校拒绝入学 被指沉迷网游</a></li>
+                    <li><a href="#">山东广播电视台原副总编辑王英被批捕</a></li>
+                    <li><a href="#">90后直播农村生活获8万打赏 父母称其不务正业</a></li>
+                    <li><a href="#">京张铁路“百年铁路桥”被拆 将在原地建造新桥</a></li>
+                    <li><a href="#">北京一地连续2年地震 当地居民:山挖空了早习惯了</a></li>
+                    <li><a href="#">共享豪车现身杭州 49.9元即可开上劳斯莱斯</a></li>
+                </ul>
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">超级高铁要来了!中国将造时速1000公里磁悬浮列车</a></li>
+                    <li><a href="#">广东珠海将新增1所985高校?官方:不准确不靠谱</a></li>
+                    <li><a href="#">男子通过墙洞偷窥隔壁女孩：洞是用手抠出来的</a></li>
+                    <li><a href="#">高校宿舍女厕所翻修 校方给女寝配发塑料桶应急</a></li>
+                    <li><a href="#">男子发短信销售近3亿条个人信息 一年售卖近3亿</a></li>
+                    <li><a href="#">伊利正式签约北京冬奥 持续缔造国民活力未来</a></li>
+                </ul>
+            </div>
+            <div class="china-imgs fl">
+                <div class='littleTitle'>国内图片</div>
+                <div class='posR'>
+                    <a href="#" class='newsBigimg'></a>
+                    <a href="#" class='newsBigimgtitle'>贵州纳雍山体崩塌已致17人死亡</a>
+                </div>
+                <div class='fl'>
+                    <a href="#" class='newsLittleimg'></a>
+                    <a href="#" class='newsLittleimgtitle'>成都出土75座古墓</a>
+                </div>
+                <div class="fr">
+                    <a href="#" class='newsLittleimg'></a>
+                    <a href="#" class='newsLittleimgtitle'>女子身藏1123万现金被拦下</a>
+                </div>
+
+
+            </div>
+            <div class="china-hot fr">
+                <div class='clearfix'>
+                    <div class='littleTitle'>国内图片</div>
+                    <div class='fl'>
+                        <a href="#" class='newsLittleimg'></a>
+                        <a href="#" class='newsLittleimgtitle'>老赖欠款五亿住豪宅 茅台酒满柜</a>
+                    </div>
+                    <div class="fr">
+                        <a href="#" class='newsLittleimg'></a>
+                        <a href="#" class='newsLittleimgtitle'>泸州城管打人？目击者：商贩违规 挥舞秤砣先动手</a>
+                    </div>
+                </div>
+                <div class='hotlist'>
+                    <div class='littleTitle'>热门点击</div>
+                    <ul class='hotClick'>
+                        <li><span class='listNum num1'></span><a href="#">榆林推农村婚事标准：彩礼不过万宴席不超15桌</a></li>
+                        <li><span class='listNum num2'></span><a href="#">我国首次截获科氏网纹盾蚧</a></li>
+                        <li><span class='listNum num3'></span><a href="#">湖南2男孩爬进搅拌机 碰开关后身亡</a></li>
+                        <li><span class='listNum num4'></span><a href="#">青海玛沁境内发生山体滑坡9人被埋　救援仍在进行</a></li>
+                        <li><span class='listNum num5'></span><a href="#">外媒关注中国戒除网瘾训练营：行军课每天徒步40公里</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="china">
+        <div class="china-title">
+            <a href="#" class='blueBlodTitle'>国际</a>
+            <a class='enName'>WORLD</a>
+            <span class='title-list'>
+                <a href="#">环球视野</a>
+                <span class='news-divider'></span>
+                <a href="#">国际人物</a>
+            </span>
+            <a href="#" class="more">更多</a>
+        </div>
+        <div class="china-content">
+            <div class="china-ulist fl">
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">澳媒：澳大利亚遣返5名中国偷渡者 </a></li>
+                    <li><a href="#">美国太平洋司令哈里斯或转任美驻澳大使</a></li>
+                    <li><a href="#">联合国安理会发表主席声明 谴责朝鲜最新导弹试射</a></li>
+                    <li><a href="#">日媒:中国海警船连续6天巡航钓鱼岛 疑搭载机关炮</a></li>
+                    <li><a href="#">文在寅提名新任驻中美日大使 驻华大使确定卢英敏</a></li>
+                    <li><a href="#">决不撤出中国！乐天花光21亿再筹钱进行紧急注资</a></li>
+                </ul>
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">朴槿惠被逼"自愿退党"后怒了:干脆开除我党籍!</a></li>
+                    <li><a href="#">金正恩：要以太平洋为目标多进行弹道火箭发射</a></li>
+                    <li><a href="#">马来西亚推出豪华“中药月饼” 一块价值6000多元</a></li>
+                    <li><a href="#">西班牙一华裔家庭遭入室抢劫 父亲死亡儿子重伤</a></li>
+                    <li><a href="#">金正恩谈朝鲜发射导弹：对日本历史侵略行为的报复</a></li>
+                    <li><a href="#">全球200万穆斯林云集麦加开始朝觐 安全部队待命</a></li>
+                </ul>
+            </div>
+            <div class="china-imgs fl">
+                <div class='littleTitle'>国际图片</div>
+                <div class='posR'>
+                    <a href="#" class='newsBigimg'
+                       style='background-image: url("images/42166d224f4a20a47eebf10c9a529822730ed000.jpg")'></a>
+                    <a href="#" class='newsBigimgtitle'>为做毛皮大衣 这些狐狸被养成“怪物”</a>
+                </div>
+                <div class='fl'>
+                    <a href="#" class='newsLittleimg'
+                       style='background-image: url("images/500fd9f9d72a6059a8fa6dd62234349b023bba10.jpg")'></a>
+                    <a href="#" class='newsLittleimgtitle'>英肉汁摔跤比赛 搏斗“辣眼睛”</a>
+                </div>
+                <div class="fr">
+                    <a href="#" class='newsLittleimg'
+                       style='background-image: url("images/f3d3572c11dfa9ecec5edadb68d0f703908fc18e.jpg")'></a>
+                    <a href="#" class='newsLittleimgtitle'>美第一夫人视察灾区穿高跟鞋惹争议</a>
+                </div>
+
+
+            </div>
+            <div class="china-hot fr">
+                <div class='clearfix'>
+                    <div class='littleTitle'>环球视野 <a href="#" class='more fr'>更多</a></div>
+                    <div class='fl'>
+                        <a href="#" class='newsLittleimg'
+                           style='background-image: url("images/6a63f6246b600c3304705704104c510fd8f9a1f5.jpg")'></a>
+                        <a href="#" class='newsLittleimgtitle'>美国休斯顿变水城 房屋齐“泡澡”</a>
+                    </div>
+                    <div class="fr">
+                        <a href="#" class='newsLittleimg'
+                           style='background-image: url("images/7acb0a46f21fbe095cc6f2d861600c338644ad65.jpg")'></a>
+                        <a href="#" class='newsLittleimgtitle'>印度首批国家安全部队女警入职</a>
+                    </div>
+                </div>
+                <div class='hotlist'>
+                    <div class='littleTitle'>国际热搜词</div>
+                    <ul class='hotClick'>
+                        <li><span class='listNum num1'></span><a href="#">榆林推农村婚事标准：彩礼不过万宴席不超15桌</a></li>
+                        <li><span class='listNum num2'></span><a href="#">我国首次截获科氏网纹盾蚧</a></li>
+                        <li><span class='listNum num3'></span><a href="#">湖南2男孩爬进搅拌机 碰开关后身亡</a></li>
+                        <li><span class='listNum num4'></span><a href="#">青海玛沁境内发生山体滑坡9人被埋　救援仍在进行</a></li>
+                        <li><span class='listNum num5'></span><a href="#">外媒关注中国戒除网瘾训练营：行军课每天徒步40公里</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="china">
+        <div class="china-title">
+            <a href="#" class='blueBlodTitle'>体育</a>
+            <a class='enName'>SPORTS</a>
+            <span class='title-list'>
+                <a href="#">NBA</a>
+                <span class='news-divider'></span>
+                <a href="#">国际足球</a>
+                <span class='news-divider'></span>
+                <a href="#">国内足球</a>
+                <span class='news-divider'></span>
+                <a href="#">CBA</a>
+                <span class='news-divider'></span>
+                <a href="#">综合体育</a>
+            </span>
+            <a href="#" class="more">更多</a>
+        </div>
+        <div class="china-content">
+            <div class="china-ulist fl">
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">业内:LBJ常帮经纪人拉拢球员 办训练营引来抱怨</a></li>
+                    <li><a href="#">恒大世界级边锋终于要来？若加盟中超他能横着走</a></li>
+                    <li><a href="#">香港“剑客”全运会男花摘银 创队史最好成绩</a></li>
+                    <li><a href="#">詹皇与麦迪首次对决，詹皇砍34分依然被“教做人</a></li>
+                    <li><a href="#">基恩：贝克汉姆放现在值10亿镑 吉格斯能值20亿</a></li>
+                    <li><a href="#">全运游泳看点：孙杨冲七金 徐嘉余能否破纪录？</a></li>
+                </ul>
+                <ul class="bluedot">
+                    <li class='blackTitle'><i class='reddot'></i><a href="#">耻辱!国乒天才5连败遭吊打恐陨落 曾打哭日本神童</a></li>
+                    <li><a href="#">里皮或祭出433攻击强阵 郜林武磊于汉超3翼齐飞</a></li>
+                    <li><a href="#">科比挺厄文:他无任何弱点 其他人该庆幸他没1.98</a></li>
+                    <li><a href="#">曼城5000万镑报价桑切斯遭拒 温格:请加上斯特林</a></li>
+                    <li><a href="#">又一个姚明诞生?主教练:大个子不缺 但情商差得远</a></li>
+                    <li><a href="#">忆国足首代追梦人: 攻不破的万里长城 溘然长逝</a></li>
+                </ul>
+            </div>
+            <div class="china-imgs fl">
+                <div class='littleTitle'>体育图片</div>
+                <div class='posR'>
+                    <a href="#" class='newsBigimg'
+                       style='background-image: url("images/4034970a304e251f79571034ad86c9177e3e535e.jpg")'></a>
+                    <a href="#" class='newsBigimgtitle'>清纯妹子爱打篮球引众男生围观</a>
+                </div>
+                <div class='fl'>
+                    <a href="#" class='newsLittleimg'
+                       style='background-image: url("images/cdbf6c81800a19d8637472c939fa828ba71e4683.jpg")'></a>
+                    <a href="#" class='newsLittleimgtitle'>马竞回签科斯塔遭切尔西拦路</a>
+                </div>
+                <div class="fr">
+                    <a href="#" class='newsLittleimg'
+                       style='background-image: url("images/024f78f0f736afc35499cba9b919ebc4b6451260.jpg")'></a>
+                    <a href="#" class='newsLittleimgtitle'>张继科毛巾刺绣个人可爱卡通形象</a>
+                </div>
+
+
+            </div>
+            <div class="china-hot fr">
+                <div class='clearfix'>
+                    <div class='littleTitle'>NBA <a href="#" class='more fr'>更多</a></div>
+                    <div class='fl'>
+                        <a href="#" class='newsLittleimg'
+                           style='background-image: url("images/u=3556455090,3325791668&fm=173&s=69E3B844549084755CE4E49A03009081&w=218&h=146&img.JPEG")'></a>
+                        <a href="#" class='newsLittleimgtitle'>锡伯杜：正跟穆罕默德交谈 将他重新带回森林狼</a>
+                    </div>
+                    <div class="fr">
+                        <a href="#" class='newsLittleimg'
+                           style='background-image: url("images/u=2407166963,229738537&fm=173&s=0D7046862D8284CC1051E83D03005043&w=218&h=146&img.JPEG")'></a>
+                        <a href="#" class='newsLittleimgtitle'>湖人后科比时代重建初见成效 打破勇士统治靠他们？</a>
+                    </div>
+                </div>
+                <div class='hotlist'>
+                    <div class='littleTitle'>体育话题</div>
+                    <ul class='hotClick'>
+                        <li><a href="#">没那么简单！NBA裁判其实是个苦差事</a></li>
+                        <li><a href="#">意媒：弗拉米尼可能前往意甲踢球</a></li>
+                        <li><a href="#">首尔FC寄语国家队：期盼韩国连续九次跻身世界杯</a></li>
+                        <li><a href="#">阿根廷世预赛位居第5 距直通世界杯1分</a></li>
+                        <li><a href="#">事无巨细！国安签约德甲劲旅主厨 全力冲刺亚冠</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pictureNews clearfix">
+        <div class="pictureTitle">
+            <span class='blueBlodTitle'>图片新闻</span>
+            <span class='enName'>PHOTOS</span>
+        </div>
+        <div class="pictureContent">
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/0ff41bd5ad6eddc4a446593733dbb6fd5366335d.jpg")'></a>
+                <a href="#" class='picture-title'>娱乐圈十大萌系女神</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/4ec2d5628535e5dd42da49137cc6a7efcf1b620c.jpg")'></a>
+                <a href="#" class='picture-title'>澳女子与鱼群同游似美人鱼</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/d043ad4bd11373f088958053ae0f4bfbfaed0457.jpg")'></a>
+                <a href="#" class='picture-title'>澳大学生拍日历为慈善筹款</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/e1fe9925bc315c6082a4852387b1cb13485477cd.jpg")'></a>
+                <a href="#" class='picture-title'>黑莓10月将发手机新品</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/d009b3de9c82d1580f15b77d8a0a19d8bd3e4263.jpg")'></a>
+                <a href="#" class='picture-title'>女大学生和平板玩了一下午</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/3801213fb80e7beccc84eb2d252eb9389a506ba4.jpg")'></a>
+                <a href="#" class='picture-title'>当照片遇到手绘</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/8ad4b31c8701a18bb6e7fe83942f07082938feea.jpg")'></a>
+                <a href="#" class='picture-title'>范冰冰热巴演女王谁更霸气</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/0ff41bd5ad6eddc4a446593733dbb6fd5366335d.jpg")'></a>
+                <a href="#" class='picture-title'>娱乐圈十大萌系女神</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/d009b3de9c82d1580f15b77d8a0a19d8bd3e4263.jpg")'></a>
+                <a href="#" class='picture-title'>女大学生和平板玩了一下午</a>
+            </div>
+            <div class="pictureBox">
+                <a href="#" class='picture' style='background-image: url("images/4ec2d5628535e5dd42da49137cc6a7efcf1b620c.jpg")'></a>
+                <a href="#" class='picture-title'>澳女子与鱼群同游似美人鱼</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footerwrapper">
+    <div class="w">
+        <div class="bottombar clearfix">
+            <div class="bot-l fl">
+                <div class="bot-tit">
+                    <i class='reddot'></i>
+                    <span>更多精彩内容</span>
+                </div>
+                <div class="bot-l-content clearfix">
+                    <div class="QR_code fl"></div>
+                    <div class="download fr">
+                        <a href="#">Android版下载</a>
+                        <a href="#">iPhone版下载</a>
+                    </div>
+                    <p class='bot-tit fl' style='font-size: 18px;margin-top: 16px'>扫描二维码, 收看更多新闻</p>
+                </div>
+            </div>
+            <div class="bot-c fl">
+                <div class="bot-tit">
+                    <i class='reddot'></i>
+                    <span>相关功能</span>
+                </div>
+                <div class="bot-c-content">
+                    <ul>
+                        <li style='background: url("images/m1_da03e52.png") no-repeat center top'><a href="#">新闻订阅</a></li>
+                        <li style='background: url("images/m2_f7fc097.png") no-repeat center top'><a href="#">个性化新闻</a></li>
+                        <li style='background: url("images/m3_9bbb290.png") no-repeat center top'><a href="#">邮件新闻订阅</a></li>
+                        <li style='background: url("images/m4_f793fb1.png") no-repeat center top'><a href="#">地区新闻</a></li>
+                        <li style='background: url("images/m5_7d63764.png") no-repeat center top'><a href="#">历史新闻</a></li>
+                        <li style='background: url("images/m6_535009b.png") no-repeat center top'><a href="#">新闻免费代码</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bot-r fl">
+                <div class="bot-tit">
+                    <i class='reddot'></i>
+                    <span>百度新闻独家出品</span>
+                </div>
+                <div class="bot-r-content">
+                    <ul>
+                        <li>1. 新闻由机器选取每5分钟自动更新</li>
+                        <li>2. 百度新闻搜索源于互联网新闻网站和频道，系统自动分类排序</li>
+                        <li>3. 百度不刊登或转载任何完整的新闻内容</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            责任编辑：胡彦BN098 刘石娟BN068 谢建BN085 李芳雨BN091 储信艳BN087 焦碧碧BN084 禤聪BN095 王鑫BN060 崔超BN071 违法和不良信息举报电话：010-59922128
+        </div>
+        <div class="footer tc">
+            <a href="#">投诉中心</a>
+            <span>京公网安备11000002000001号</span>
+            <a href="#">互联网新闻信息服务许可</a>
+            <span>©2017Baidu</span>
+            <a href="#">使用百度前必读</a>
+            <a href="#" class='icon' style="background-image: url('images/img1_07ee3bc.png')"></a>
+            <a href="#" class='icon' style="background-image: url('images/img2_000e014.png')"></a>
+            <a href="#" class='icon' style="background-image: url('images/img3_32c9dc6.png')"></a>
+        </div>
+    </div>
+</div>
+<div id="gotop">
+    <ul>
+        <li class='report'><a href="#">举报</a></li>
+        <li style='background-position: 0 0' class='qrCode'><a href="#" style='padding: 15px 0'>二维码</a>
+        <div class="obox">
+            <div class='oboximg'></div>
+            <div class='oboxtext'>
+                <span>百度新闻客户端</span>
+                <dl>
+                    <dt>· 扫描二维码下载</dt>
+                    <dt>· 随时随地收看更多新闻</dt>
+                </dl>
+            </div>
+        </div>
+        </li>
+        <li style='background-position: 0 -51px'><a href="#" style='padding-top: 8px'>收藏本站</a></li>
+        <li style='background-position: 0 -153px'><a href="#" style='padding-top: 15px'>传媒</a></li>
+        <li style='background-position: 0 -204px'><a href="#" style='padding-top: 15px'>搜索</a></li>
+        <li style='background-position: 0 -255px'><a href="#" style='padding-top: 8px'>用户反馈</a></li>
+        <li id='top' onclick="window.scroll(0, 0)"></li>
+    </ul>
+</div>
+<div class="shade">
+    <div class="loginBox">
+        <div class="logintitle">
+            <span>登陆山寨百度帐号</span>
+            <span class='fr box_close' id="box_close"></span>
+        </div>
+        <div class="logincontent tc">
+            <table>
+                <tr>
+                    <td></td>
+                    <td class=tr><a href="#">短信快捷登陆</a></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class='inp' style='background-position: 0 -62px'></td>
+                </tr>
+                <tr>
+                    <td><input type="password" class='inp' style='background-position: 0 -142px'></td>
+                </tr>
+                <tr>
+                    <td class=tl style='font-size: 12px'><input type="checkbox" checked>下次自动登陆</td>
+                    <td class=tr><a href="#">登陆遇到问题</a></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value='登陆' class='inp logininp'></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class=tr><a href="#">立即注册</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/master.js"></script>
+</body>
+</html>
